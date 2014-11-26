@@ -1,0 +1,50 @@
+!/README.md
+!/.gitignore
+!/.htaccess
+!/index.php
+
+Config/bootstrap.local.php
+Config/core.php
+Config/database.php
+Config/email.php
+
+# ignore Cake temp files
+tmp/cache
+tmp/logs
+tmp/sessions
+tmp/tests
+# except empty files:
+!/tmp/cache/models/empty
+!/tmp/cache/persistent/empty
+!/tmp/cache/views/empty
+!/tmp/logs/empty
+!/tmp/sessions/empty
+!/tmp/tests/empty
+
+# ignore these IDE/OS/other temp files:
+*~
+*.save
+*.save.*
+Copy of *
+* (copy)*
+* (another copy)*
+x*
+works*
+bk*
+
+# ignore IDE/OS meta files
+.buildpath
+.DS_Store
+.idea
+.metadata
+.project
+.settings/
+*.sublime-*
+nbproject
+Thumbs.db
+
+# Composer files
+!/composer.json
+!/composer.lock
+Plugin/
+Vendor/
